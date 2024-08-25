@@ -1,0 +1,59 @@
+body{
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+}
+.switch{
+      position: relative;
+      width: 90px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+}
+.switch-checkbox{
+      display: none;
+}
+.switch-label{
+      display: block;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #999;
+      border-radius: 20px;
+}
+.switch-one{
+      display: block;
+      width: 200%;
+      margin-left: 100%;
+      transition: margin 0.3s ease-in 0s;
+}
+.switch-one:before, .switch-one:after{
+      display: block;
+      float: left;
+      width: 50%;
+      height: 30px;
+      padding: 0;
+      line-height: 30px;
+      font-size: 14px;
+      color: #fff;
+      font-weight: bold;
+      box-sizing: border-box;
+}
+.switch-two:before{
+      content: 'ON';
+      padding-left: 10px;
+      background: #fff;
+      color: #000;
+}
+.switch-one:after{
+      content: 'OFF';
+      padding-right: 10px;
+      background: #fff;
+      color: #000;
+      text-align: right;
+}

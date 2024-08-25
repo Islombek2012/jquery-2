@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>light mode and Dark mode</title>
+      <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      
+      <div class="wrapper">
+            <div class="switch">
+                  <input type="checkbox" name="switch" id="custom-switch" class="switch-checkbox">
+                  <label for="custom-switch" class="switch-label">
+                        <span class="switch-one"></span>
+                        <span class="switch-two"></span>
+                  </label>
+            </div>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+            $('#custom-switch').change(function(){
+                  $('.wrapper').toggleClass('dark-mode');
+            })
+      </script>
+</body>
+</html>
